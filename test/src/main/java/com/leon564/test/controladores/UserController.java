@@ -45,7 +45,7 @@ public class UserController {
 	@GetMapping("/Users")
 	public String Users(Model model) {
 		model.addAttribute("user", Repo.findAll());
-		return "/User/Users";
+		return "/Users";
 	}
 	
 	
