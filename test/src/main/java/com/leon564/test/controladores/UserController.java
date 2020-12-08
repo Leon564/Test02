@@ -23,12 +23,12 @@ public class UserController {
 	@Autowired
 	RepoUser Repo;
 	
-	@GetMapping("/Register")
+	@GetMapping("/register")
 	public String nuevo() {
 		return "/User/Register";
 	}
 	
-	@PostMapping("/Registrar")
+	@PostMapping("/registrar")
 	public String registrar( 
 			//@Valid
 			@ModelAttribute("user")user user,
@@ -42,15 +42,21 @@ public class UserController {
 		
 	}
 	
-	@GetMapping("/Users")
+	@GetMapping("/users")
 	public String Users(Model model) {
 		model.addAttribute("user", Repo.findAll());
-		return "/Users";
+		return "/users";
+	}
+	
+	@GetMapping("/list")
+	public String list(Model model) {
+		model.addAttribute("user", Repo.findAll());
+		return "/User/users";
 	}
 	
 	
 	// Ruta get /eliminar/{id}
-	@GetMapping("/DeleteUser/{id}")
+	@GetMapping("/deleteuser/{id}")
 	public String DeleteUser(@PathVariable("id")int id) {
 		Repo.deleteById(id);
 		return "redirect:/Users";
