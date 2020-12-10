@@ -45,13 +45,13 @@ public class UserController {
 	@GetMapping("/users")
 	public String Users(Model model) {
 		model.addAttribute("user", Repo.findAll());
-		return "users";
+		return "Users";
 	}
 	
 	@GetMapping("/list")
 	public String list(Model model) {
 		model.addAttribute("user", Repo.findAll());
-		return "User/users";
+		return "User/Users";
 	}
 	
 	
