@@ -25,7 +25,7 @@ public class UserController {
 	
 	@GetMapping("/register")
 	public String nuevo() {
-		return "/User/Register";
+		return "User/Register";
 	}
 	
 	@PostMapping("/registrar")
@@ -45,13 +45,13 @@ public class UserController {
 	@GetMapping("/users")
 	public String Users(Model model) {
 		model.addAttribute("user", Repo.findAll());
-		return "/users";
+		return "users";
 	}
 	
 	@GetMapping("/list")
 	public String list(Model model) {
 		model.addAttribute("user", Repo.findAll());
-		return "/User/users";
+		return "User/users";
 	}
 	
 	
