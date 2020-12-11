@@ -26,7 +26,7 @@ public class UserController {
 
 @GetMapping("/register")
 public String nuevo() {
-	return "test/src/main/resources/templates/User/Register.html";
+	return "User/Register.html";
 }
 	
 @GetMapping("/addUser")
