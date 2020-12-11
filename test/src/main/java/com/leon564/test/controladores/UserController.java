@@ -31,7 +31,7 @@ public String nuevo() {
 	
 @GetMapping("/addUser")
 public String Add() {
-	return "Register";
+	return ":Register";
 }
 	
 	@PostMapping("/registrar")
