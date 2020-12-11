@@ -19,7 +19,7 @@ public class CategoriaController {
 	
 	
 	@GetMapping("/categorias")
-	public String Categoria(Model model) {
+	public String Categorias(Model model) {
 		model.addAttribute("categoria", Repo.findAll());
 		return "Categoria/categorias";
 	}
