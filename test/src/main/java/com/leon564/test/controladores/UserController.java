@@ -22,10 +22,10 @@ public class UserController {
 
 	@Autowired
 	RepoUser Repo;
-	
+
 	@GetMapping("/register")
 	public String nuevo() {
-		return "User/Register";
+		return "User/Register.html";
 	}
 	
 	@PostMapping("/registrar")
