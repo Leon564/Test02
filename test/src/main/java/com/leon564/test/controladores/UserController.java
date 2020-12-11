@@ -18,7 +18,7 @@ import com.leon564.test.repositorios.RepoUser;
 
 
 
-@RestController
+@Controller
 public class UserController {
 
 	@Autowired
