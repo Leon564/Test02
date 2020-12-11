@@ -19,8 +19,8 @@ public class CategoriaController {
 	
 	
 	@GetMapping("/categorias")
-	public String Users(Model model) {
-		model.addAttribute("user", Repo.findAll());
+	public String Categoria(Model model) {
+		model.addAttribute("categoria", Repo.findAll());
 		return "Categoria/categorias";
 	}
 	
