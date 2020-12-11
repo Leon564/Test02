@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.leon564.test.entidades.user;
 import com.leon564.test.repositorios.RepoUser;
@@ -17,7 +18,7 @@ import com.leon564.test.repositorios.RepoUser;
 
 
 
-@Controller
+@RestController
 public class UserController {
 
 	@Autowired
