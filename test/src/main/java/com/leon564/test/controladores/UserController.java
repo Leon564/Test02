@@ -23,15 +23,15 @@ public class UserController {
 	@Autowired
 	RepoUser Repo;
 
-	@GetMapping("/register")
-	public String nuevo() {
-		return "test/src/main/resources/templates/User/Register.html";
-	}
+@GetMapping("/register")
+public String nuevo() {
+	return "test/src/main/resources/templates/User/Register.html";
+}
 	
-	@GetMapping("/addUser")
-	public String Add() {
-		return "Register";
-	}
+@GetMapping("/addUser")
+public String Add() {
+	return "Register";
+}
 	
 	@PostMapping("/registrar")
 	public String registrar( 
