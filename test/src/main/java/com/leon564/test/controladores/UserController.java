@@ -28,6 +28,11 @@ public class UserController {
 		return "User/Register.html";
 	}
 	
+	@GetMapping("/addUser")
+	public String Add() {
+		return "Register";
+	}
+	
 	@PostMapping("/registrar")
 	public String registrar( 
 			//@Valid
