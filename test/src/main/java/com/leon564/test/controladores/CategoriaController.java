@@ -2,6 +2,7 @@ package com.leon564.test.controladores;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -15,6 +16,14 @@ import com.leon564.test.repositorios.RepoCategoria;
 public class CategoriaController {
 	@Autowired
 	RepoCategoria Repo;
+	
+	
+	@GetMapping("/categorias")
+	public String Users(Model model) {
+		model.addAttribute("user", Repo.findAll());
+		return "Categoria/categorias";
+	}
+	
 	
 	@GetMapping("/registercat")
 	public String nuevo() {
