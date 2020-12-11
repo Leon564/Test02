@@ -18,11 +18,6 @@ public class CategoriaController {
 	RepoCategoria Repo;
 	
 	
-	@GetMapping("/categorias")
-	public String Categorias(Model model) {
-		model.addAttribute("categoria", Repo.findAll());
-		return "Categoria/Categorias";
-	}
 	
 	
 	@GetMapping("/registercat")
@@ -43,4 +38,11 @@ public class CategoriaController {
 		
 		
 	}
+	
+	@GetMapping("/categorias")
+	public String Categorias(Model model) {
+		model.addAttribute("categoria", Repo.findAll());
+		return "Categoria/ListCat";
+	}
+	
 }
