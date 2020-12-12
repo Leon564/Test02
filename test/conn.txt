@@ -1,0 +1,31 @@
+//Conexion para heroku
+
+spring.datasource.url=jdbc:mysql://ui2vr8hk5r7kn1ow:ICgFN678S7u7OcPOMjWr@bwwmx5zwu2ion4avx6ud-mysql.services.clever-cloud.com:3306/bwwmx5zwu2ion4avx6ud?autoReconnect=true
+spring.datasource.password=ICgFN678S7u7OcPOMjWr
+spring.datasource.driver-class-name= com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto= update
+#server.port= 3306
+spring.servlet.multipart.max-file-size= 10MB
+spring.servlet.multipart.max-request-size= 10MB
+
+spring.datasource.tomcat.validation-query="SELECT 1"
+spring.datasource.tomcat.validation-interval=30000
+
+
+
+
+
+//Conexion para local
+
+spring.datasource.url=jdbc:mysql://udcgfsycmdsnwjac:AopLU2QjQQvSQVbhWFtA@bbkudifg3nm2qbokg9cf-mysql.services.clever-cloud.com:3306/bbkudifg3nm2qbokg9cf
+spring.datasource.password=AopLU2QjQQvSQVbhWFtA
+spring.datasource.driver-class-name= com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto= update
+#server.port= 3306
+spring.servlet.multipart.max-file-size= 10MB
+spring.servlet.multipart.max-request-size= 10MB
+
+spring.datasource.tomcat.validation-query="SELECT 1"
+spring.datasource.tomcat.validation-interval=30000
