@@ -7,25 +7,22 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 </head>
 <body>
-	
+	 <p class="card-category" th:text="${'Total de registros ' + #lists.size(producto)}" ></p>
 	<div class="row">
-            <div class="col-lg-12 col-md-12">
-            
-                       <div th:each="e:${Productos}" >
-                        <div class="card" id="${e.id}">
-                        	<div class="card-header">
-                        		<h3 th:text="${e.nombre}"></h3>
-                        	</div>
-
-                        	<div>
-                        		<img src="${e.descripcion}" alt="200">
-                        	</div>
-                        </div>
-                       
-                      <div>
          
-            </div>
-          </div>
+         <div class="col-md-12">
+         
+          <div class="card" th:each="p: ${producto}">
+      			<div th:text="${p.nombre}">
+      			
+      			</div>
+       
+       </div>
+         </div>
+      
+     
+  
+     </div>
 
 </body>
 </html>

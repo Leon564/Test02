@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.leon564.test.entidades.Productos;
-import com.leon564.test.entidades.user;
+
 import com.leon564.test.repositorios.RepoProductos;
-import com.leon564.test.repositorios.RepoUser;
+
 
 @Controller
 public class ProductosController {
