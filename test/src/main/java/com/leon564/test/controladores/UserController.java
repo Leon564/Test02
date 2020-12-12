@@ -31,9 +31,9 @@ public String nuevo() {
 public String Add() {
 	return "Register";
 }
-@GetMapping("/add2.html")
+@GetMapping("/add2")
 public String Add2() {
-	return "User/register2";
+	return "/User/register2";
 }
 	
 	@PostMapping("/registrar")
