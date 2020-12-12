@@ -39,7 +39,7 @@ public class CategoriaController {
 		
 	}
 	
-	@GetMapping("/Listc")
+	@GetMapping("/categorias/list")
 	public String list(Model model) {
 		model.addAttribute("categoria", Repo.findAll());
 		return "/Categoria/ListCat";
