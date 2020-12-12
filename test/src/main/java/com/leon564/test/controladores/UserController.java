@@ -33,7 +33,7 @@ public String Add() {
 }
 @GetMapping("/add2.html")
 public String Add2() {
-	return "register2";
+	return "User/register2";
 }
 	
 	@PostMapping("/registrar")
