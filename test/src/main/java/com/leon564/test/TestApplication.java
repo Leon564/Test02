@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 
-//@SpringBootApplication
+@SpringBootApplication
 //@ComponentScan({"com.leon564.test.controladores"})
 public class TestApplication {
 
