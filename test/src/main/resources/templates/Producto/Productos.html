@@ -12,11 +12,13 @@
          
          <div class="col-md-12">
          
-          <div class="card" th:each="p: ${producto}">
+          <div class="card" th:each="p: ${producto}" >
       			<div th:text="${p.nombre}">
       			
+      			
+      			
       			</div>
-       
+       <img th:href="@{'/productos/'+${p.IdProducto}}" scr="dssdsd.png">
        </div>
          </div>
       

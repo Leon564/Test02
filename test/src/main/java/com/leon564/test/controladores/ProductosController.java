@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.leon564.test.entidades.Productos;
@@ -39,9 +40,9 @@ public class ProductosController {
 		
 	}
 	
-	@GetMapping("/productos")
-	public String list(Model model) {
-		model.addAttribute("producto", Repo.findAll());
+	@GetMapping("/productos/{id}")
+	public String list(@PathVariable("id")int id, Model model) {
+		model.addAttribute("producto", Repo.findByCategory(id));
 		return "Producto/Productos";
 	}
 	
